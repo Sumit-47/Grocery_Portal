@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+  header('Location:connection/login.php');
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +26,7 @@
      <a href="hp.html"><?php echo $_SESSION['username']; ?></a>
      <a href="aboutus.html">About</a>
      <a href="Contact.html">Contact</a>
-     <a href="login.html">Login</a>
+     <a href="connection/logout.php">Logout</a>
    </div>
   <h1 id="heading">Our Products</h1>
 </div><br>
@@ -45,9 +53,9 @@
    <table cellspacing="10px" align="center" cellpadding="10px" id="all">
      <tr id="fruit" align="center">
        <td><img id="items" src="https://img1.exportersindia.com/product_images/bc-full/2019/9/6421183/fresh-orange-1567759904-5069464.jpeg" height="300px" width="300px" alt="Orange">
-       </b><p align="center"><b>Orange</p><p align="center">Rs 60</b></p><button type="submit" id="btn" onclick="myFunction()">Buy</button></td>
+       </b><p align="center"><b>Orange</p><p align="center">Rs 60</b></p><button type="submit" id="btn" onclick="location.href='https://paystack.com/pay/freshmart'">Buy</button></td>
         <td id="fruit"><img id="items" src="https://img1.exportersindia.com/product_images/bc-full/2019/6/5962382/fresh-apple-1561091704-4963146.jpeg" height="300px" width="300px">
-           <p align="center"><b>Apple</p><p align="center">Rs 50</b></p><button type="submit" id="btn" onclick="myFunction()">Buy</button></td>
+           <p align="center"><b>Apple</p><p align="center">Rs 50</b></p><button type="submit" name="add_to_cart" id="btn" onclick="myFunction()">Buy</button></td>
        <td><img id="items" src="images/category-2.jpg" height="300px" width="300px">
            <p align="center"><b>Strawberry</p><p align="center">Rs 40</b></p><button type="submit" id="btn" onclick="myFunction()">Buy</button></td>
        <td><img id="items" src="https://img2.exportersindia.com/product_images/bc-full/2019/7/6505016/fresh-lemon-1564397466-5020848.jpeg"height="300px" width="300px">

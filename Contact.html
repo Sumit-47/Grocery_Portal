@@ -4,7 +4,20 @@
     <meta charset="utf-8">
     <title>Contact US</title>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="Contact.css">
+<script>
+/*$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});*/
+$(document).ready(function(){
+  $("#btn").click(function(){
+    alert("Text: " + $("p").text());
+  });
+  });
+</script>
   </head>
   <body>
 
@@ -19,8 +32,8 @@
           </div>
           <div class="right">
             <ul>
-              <li><a href="#">Log In</a></li>
-              <li><a href="#">Sign Up</a></li>
+              <li><a href="login.html">Log In</a></li>
+              <li><a href="SIGNUP123.html">Sign Up</a></li>
               </ul>
             </div>
         </div>
@@ -37,7 +50,7 @@
               <input type="text" placeholder="E-Mail" name="Email"/>
               <input type="text" id="msg" placeholder="Message"/>
               </form>
-          <button id="btn" type="button" onclick="validateform()">Let's Talk</button>
+          <button id="btn" type="button" onclick="validateform()">Get in Touch</button>
           </div>
       </div>
       <script>

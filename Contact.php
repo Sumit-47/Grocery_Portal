@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -26,14 +30,14 @@ $(document).ready(function(){
         <div class="left">
           <ul>
             <li><a href="test.php">Home</a></li>
-            <li><a href="aboutus.html">About</a></li>
+            <li><a href="aboutus.php">About</a></li>
             <li><a href="#">Contact</a></li>
             </ul>
           </div>
           <div class="right">
             <ul>
-              <li><a href="login.html">Log In</a></li>
-              <li><a href="SIGNUP123.html">Sign Up</a></li>
+              <li><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
+              <li><a href="connection/logout.php">LogOut</a></li>
               </ul>
             </div>
         </div>

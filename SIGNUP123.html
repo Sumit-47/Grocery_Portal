@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="SIGNUP123.css">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title></title>
+  </head>
+  <style>
+      body{
+          background-image: url('bg.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+      }
+      .icon-bar {
+width: 100%;
+background-color: #555;
+overflow: auto;
+}
+
+.icon-bar a {
+float: left;
+width: 20%;
+text-align: center;
+padding: 12px 0;
+transition: all 0.3s ease;
+color: white;
+font-size: 36px;
+}
+      </style>
+  <body>
+    <div class="wrapper">
+      <div class="nav">
+        <div class="left">
+          <ul>
+            <li><a href="hp.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Sign Up</a></li>
+              </ul>
+            </div>
+        </div>
+        <div>
+
+
+    <span>
+      <div class="sign-up">
+          <img src="card.jpeg">
+          <h2>Sign Up</h2>
+          <form method="POST" action="connection/signup.php">
+              <input type="text" class="input-box" placeholder="Email" name="email">
+              <input type="text" class="input-box" placeholder="Username" name="username">
+              <input type="text" class="input-box" placeholder="Name" name="name">
+              <input type="text" class="input-box" placeholder="Contact" name="contact">
+              <input type="password" class="input-box" placeholder="Password" name="password">
+              <p><span><input type="checkbox"></span> I agree to the terms and conditions</p>
+              <input type="submit" class="button1" value="Sign Up">
+          </form>
+
+    </span>
+  </div>
+    </div>
+  </body>
+</html>

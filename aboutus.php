@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,15 +15,15 @@
     <div class="nav">
       <div class="left">
         <ul>
-          <li><a href="hp.html">Home</a></li>
+          <li><a href="test.php">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Contact.php">Contact</a></li>
           </ul>
         </div>
         <div class="right">
           <ul>
-            <li><a href="login.html">Log In</a></li>
-            <li><a href="SIGNUP123.html">Sign Up</a></li>
+            <li><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
+            <li><a href="connection/logout.php">LogOut</a></li>
             </ul>
           </div>
       </div>
